@@ -1,9 +1,29 @@
+import { Container } from '@mui/material';
 import React from 'react'
+import Achievements from './components/Achievements';
+import Header from './components/Header'
+import Hero from './components/Hero';
+import ProjectSection from './components/ProjectSection';
+import Technologies from './components/Technologies';
 
 function App() {
     return (
-        <h1 className="text-3xl text-blue-500 font-bold underline">Hello From App</h1>
+        <>
+            <Container   >  
+                <Header />
+                <Hero />
+                <ProjectSection/>
+                <Technologies/>
+                <Achievements/>
+            </Container>
+        </>
+
     )
 }
 
 export default App
+
+
+if (module.hot) {
+    module.hot.accept();
+}
